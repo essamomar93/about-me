@@ -16,7 +16,13 @@ h2{
 }
 ul{
     margin: 5px;
-    list-style: square inside ;
-
-
+    list-style: circle inside ;
+}
+h3{
+    font-size: 20px;
+    margin: 10px;
+}
+ol{
+    margin: 5px;
+    list-style: decimal inside ;  
 }
