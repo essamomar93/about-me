@@ -44,7 +44,8 @@ if (secondq === 'yes' || secondq === 'y') {
 
 }
 q2();
-let therdq = prompt("do you think that i have work now ?")
+ function q3() {
+    let therdq = prompt("do you think that i have work now ?")
 
 therdq = therdq.toLowerCase();
 
@@ -58,7 +59,10 @@ if (therdq === 'yes' || therdq === 'y') {
     alert("Unfortunately i don't have");
     score++;
 
-}
+} 
+ }
+q3();
+
 let forthq = prompt("do i look like summer lover? ")
 
 forthq = forthq.toLowerCase();
