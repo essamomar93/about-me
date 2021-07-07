@@ -131,8 +131,8 @@ function q6() {
 q6 ();
 
 
-
-let siventh = "";
+function q7() {
+    let siventh = "";
 let favcar = ['volkswagen', 'bmw', 'tesla', 'toyota'];
 car:
 for (let i = 0; i < 6; i++) {
@@ -170,6 +170,8 @@ for (let i = 0; i < 6; i++) {
     }
 
 }
+}
+ q7();
 alert("my favoret cars is  'volkswagen', 'bmw', 'tesla', 'toyota'");
 
 // console.log(score);
