@@ -99,33 +99,38 @@ if (fifthq === 'yes' || fifthq === 'y') {
 }
 q5 ();
 
-let sixth = "";
-let corect = 7;
-
-for (let i = 0; i < 4; i++) {
-    sixth = prompt("lets guess number betwen 1-10 that i put it in my minde ? ");
-    sixth = parseInt(sixth);
-
-
-
-    if (sixth === 7) {
-        alert("you are right")
-        score++;
-        break;
-
+function q6() {
+    let sixth = "";
+    let corect = 7;
+    
+    for (let i = 0; i < 4; i++) {
+        sixth = prompt("lets guess number betwen 1-10 that i put it in my minde ? ");
+        sixth = parseInt(sixth);
+    
+    
+    
+        if (sixth === 7) {
+            alert("you are right")
+            score++;
+            break;
+    
+        }
+        else if (sixth < corect) {
+            alert("too law");
+    
+        } else if (sixth > corect) {
+            alert("too hight")
+    
+        }
+        else {
+            alert("pleas wright number")
+        }
     }
-    else if (sixth < corect) {
-        alert("too law");
-
-    } else if (sixth > corect) {
-        alert("too hight")
-
-    }
-    else {
-        alert("pleas wright number")
-    }
+    alert("my number was 7");  
 }
-alert("my number was 7");
+q6 ();
+
+
 
 let siventh = "";
 let favcar = ['volkswagen', 'bmw', 'tesla', 'toyota'];
