@@ -27,8 +27,8 @@ if (firstq === 'yes' || firstq === 'y') {
 }
 q1 ();
 
-
-let secondq = prompt("Now if i till you iam studed for 12 yesr school and 6 year uni do you think iam 30 years old? ")
+function q2() {
+    let secondq = prompt("Now if i till you iam studed for 12 yesr school and 6 year uni do you think iam 30 years old? ")
 
 secondq = secondq.toLowerCase();
 
@@ -42,6 +42,8 @@ if (secondq === 'yes' || secondq === 'y') {
     score++;
 }
 
+}
+q2();
 let therdq = prompt("do you think that i have work now ?")
 
 therdq = therdq.toLowerCase();
