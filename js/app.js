@@ -8,8 +8,8 @@ let username = prompt('whats your name ?');
 alert("Helo " + username);
 
 let score = 0;
-
-let firstq = prompt('If i told you i\'am Mechanical Engineer Do you think i\'am understod everything in the Cars ?');
+function q1 () {
+    let firstq = prompt('If i told you i\'am Mechanical Engineer Do you think i\'am understod everything in the Cars ?');
 
 firstq = firstq.toLowerCase();
 // console.log(firstq); 
@@ -23,6 +23,11 @@ if (firstq === 'yes' || firstq === 'y') {
     score++;
 
 }
+
+}
+q1 ();
+
+
 let secondq = prompt("Now if i till you iam studed for 12 yesr school and 6 year uni do you think iam 30 years old? ")
 
 secondq = secondq.toLowerCase();
