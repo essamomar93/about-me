@@ -63,7 +63,8 @@ if (therdq === 'yes' || therdq === 'y') {
  }
 q3();
 
-let forthq = prompt("do i look like summer lover? ")
+function q4() {
+    let forthq = prompt("do i look like summer lover? ")
 
 forthq = forthq.toLowerCase();
 
@@ -76,6 +77,9 @@ if (forthq === 'yes' || forthq === 'y') {
     alert("sure i'm in love with the winter");
     score++;
 }
+}
+q4();
+
 
 let fifthq = prompt("If i told you iam 28 years do you think my care is older than me ?")
 
