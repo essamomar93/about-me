@@ -8,8 +8,8 @@ let username = prompt('whats your name ?');
 alert("Helo " + username);
 
 let score = 0;
-
-let firstq = prompt('If i told you i\'am Mechanical Engineer Do you think i\'am understod everything in the Cars ?');
+function q1 () {
+    let firstq = prompt('If i told you i\'am Mechanical Engineer Do you think i\'am understod everything in the Cars ?');
 
 firstq = firstq.toLowerCase();
 // console.log(firstq); 
@@ -23,7 +23,12 @@ if (firstq === 'yes' || firstq === 'y') {
     score++;
 
 }
-let secondq = prompt("Now if i till you iam studed for 12 yesr school and 6 year uni do you think iam 30 years old? ")
+
+}
+q1 ();
+
+function q2() {
+    let secondq = prompt("Now if i till you iam studed for 12 yesr school and 6 year uni do you think iam 30 years old? ")
 
 secondq = secondq.toLowerCase();
 
@@ -37,7 +42,10 @@ if (secondq === 'yes' || secondq === 'y') {
     score++;
 }
 
-let therdq = prompt("do you think that i have work now ?")
+}
+q2();
+ function q3() {
+    let therdq = prompt("do you think that i have work now ?")
 
 therdq = therdq.toLowerCase();
 
@@ -51,8 +59,12 @@ if (therdq === 'yes' || therdq === 'y') {
     alert("Unfortunately i don't have");
     score++;
 
-}
-let forthq = prompt("do i look like summer lover? ")
+} 
+ }
+q3();
+
+function q4() {
+    let forthq = prompt("do i look like summer lover? ")
 
 forthq = forthq.toLowerCase();
 
@@ -65,8 +77,11 @@ if (forthq === 'yes' || forthq === 'y') {
     alert("sure i'm in love with the winter");
     score++;
 }
+}
+q4();
 
-let fifthq = prompt("If i told you iam 28 years do you think my care is older than me ?")
+function q5() {
+    let fifthq = prompt("If i told you iam 28 years do you think my care is older than me ?")
 
 fifthq = fifthq.toLowerCase();
 
@@ -81,35 +96,43 @@ if (fifthq === 'yes' || fifthq === 'y') {
     alert("wrong anser , i have V.W model 1967");
 
 }
-let sixth = "";
-let corect = 7;
-
-for (let i = 0; i < 4; i++) {
-    sixth = prompt("lets guess number betwen 1-10 that i put it in my minde ? ");
-    sixth = parseInt(sixth);
-
-
-
-    if (sixth === 7) {
-        alert("you are right")
-        score++;
-        break;
-
-    }
-    else if (sixth < corect) {
-        alert("too law");
-
-    } else if (sixth > corect) {
-        alert("too hight")
-
-    }
-    else {
-        alert("pleas wright number")
-    }
 }
-alert("my number was 7");
+q5 ();
 
-let siventh = "";
+function q6() {
+    let sixth = "";
+    let corect = 7;
+    
+    for (let i = 0; i < 4; i++) {
+        sixth = prompt("lets guess number betwen 1-10 that i put it in my minde ? ");
+        sixth = parseInt(sixth);
+    
+    
+    
+        if (sixth === 7) {
+            alert("you are right")
+            score++;
+            break;
+    
+        }
+        else if (sixth < corect) {
+            alert("too law");
+    
+        } else if (sixth > corect) {
+            alert("too hight")
+    
+        }
+        else {
+            alert("pleas wright number")
+        }
+    }
+    alert("my number was 7");  
+}
+q6 ();
+
+
+function q7() {
+    let siventh = "";
 let favcar = ['volkswagen', 'bmw', 'tesla', 'toyota'];
 car:
 for (let i = 0; i < 6; i++) {
@@ -147,6 +170,8 @@ for (let i = 0; i < 6; i++) {
     }
 
 }
+}
+ q7();
 alert("my favoret cars is  'volkswagen', 'bmw', 'tesla', 'toyota'");
 
 // console.log(score);
