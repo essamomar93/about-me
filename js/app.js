@@ -80,8 +80,8 @@ if (forthq === 'yes' || forthq === 'y') {
 }
 q4();
 
-
-let fifthq = prompt("If i told you iam 28 years do you think my care is older than me ?")
+function q5() {
+    let fifthq = prompt("If i told you iam 28 years do you think my care is older than me ?")
 
 fifthq = fifthq.toLowerCase();
 
@@ -96,6 +96,9 @@ if (fifthq === 'yes' || fifthq === 'y') {
     alert("wrong anser , i have V.W model 1967");
 
 }
+}
+q5 ();
+
 let sixth = "";
 let corect = 7;
 
